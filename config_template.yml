@@ -1,0 +1,13 @@
+collection_name: start
+colour_background: "#000000"
+colour_background_accent: "#111111"
+colour_background_accent_light: "#777777"
+colour_background_accent_lighter: "#333333"
+colour_primary_accent: "#0d47a1"
+colour_results_list_divider: "#222222"
+colour_text: "#eeeeee"
+custom_image_filename: favicon.png
+typesense_api_key: 
+typesense_host: 
+typesense_port: 
+yaml_link_file: links.yml

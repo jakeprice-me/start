@@ -1,0 +1,409 @@
+/****************************************************************************
+Start Page Stylesheet
+****************************************************************************/
+
+/* ==== CSS Reset ======================================================== */
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* ==== Fonts ============================================================ */
+
+/* rubik-300 - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-regular - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-500 - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-600 - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-700 - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-800 - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-900 - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-300italic - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 300;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-italic - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-500italic - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-600italic - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 600;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-700italic - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-800italic - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 800;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-800italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-800italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* rubik-900italic - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 900;
+    src: local(''),
+    url('../fonts/rubik-v14-latin-900italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v14-latin-900italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-300 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+    url('../fonts/open-sans-v34-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v34-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v34-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-500 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/open-sans-v34-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v34-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('../fonts/open-sans-v34-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v34-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ==== Main Styles ====================================================== */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 1rem;
+    font-family: "Open Sans", sans-serif;
+    color: var(--colour_text);
+    background: var(--colour_background);
+}
+
+header {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header #start {
+    flex-grow: 1;
+}
+
+header #start h1 {
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 2.6rem;
+    color: var(--colour_text);
+}
+
+header #symbol img {
+    width: auto;
+    height: 4rem;
+}
+
+#searchbox form {
+    display: flex;
+}
+
+#searchbox form input {
+    flex-grow: 1;
+    padding: 2rem;
+    width: 100%;
+    color: var(--colour_text);
+    border: none;
+    border-bottom: 1px solid var(--colour_background_accent);
+    background: var(--colour_background);
+}
+
+#searchbox form input:focus {
+    outline: none;
+}
+
+/* clears the 'X' from Chrome (shadow dom in dev tools)*/
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+#searchbox .ais-SearchBox-reset {
+    padding: 0 2rem 0 0;
+    width: 4rem;
+    color: var(--colour_background_accent_light);
+    border: none;
+    border-bottom: 1px solid var(--colour_background_accent);
+    background: var(--colour_background);
+}
+
+.ais-SearchBox-resetIcon path {
+    fill: var(--colour_background_accent_light);
+}
+
+#refinement-list ul {
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+#refinement-list li {
+    display: inline-block;
+    margin: 0 0.5rem 0.75rem 0;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+#refinement-list li a:link,
+#refinement-list li a:visited,
+#refinement-list li a:hover,
+#refinement-list li a:active {
+    text-decoration: none;
+}
+
+#type {
+    font-size: 1.6rem;
+}
+
+#no-results {
+    padding: 2rem;
+}
+
+#no-results p {
+    font-size: 1.4rem;
+}
+
+#results {
+    padding: 0 2rem 2rem 2rem;
+}
+
+#results li {
+    padding: 0.5rem 0 0.5rem 0;
+    display: flex;
+    flex-grow: 1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    border-bottom: 1px dotted var(--colour_results_list_divider);
+}
+
+#results li a:link,
+#results li a:visited,
+#results li a:hover,
+#results li a:active {
+    text-decoration: none;
+    color: var(--colour_text);
+}
+
+mark {
+    color: var(--colour_text);
+    background: var(--colour_primary_accent);
+}
+
+#title {
+    flex-grow: 1;
+}
+
+span[class*="label_"] {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    color: var(--colour_text);
+    border-radius: 2rem;
+    background: var(--colour_primary_accent);
+}
+
+span[class*="label_"] a {
+    color: var(--colour_text);
+    }
+
+span[class*="label_"]:before {
+    vertical-align: -0.1rem;
+    font-family: "Line Awesome Free";
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--colour_text);
+}
+
+.label_media:before {
+    content: "\f26c";
+}
+
+.label_work:before {
+    content: "\f0b1";
+}
+
+.label_sport:before {
+    content: "\f1ec";
+}
+
+.label_news:before {
+    content: "\f1ea";
+}
+
+.label_shopping:before {
+    content: "\f07a";
+}
+
+.label_organisation:before {
+    content: "\f058";
+}
+
+.label_lan-admin:before {
+    content: "\f6ff";
+}
+
+.label_lan-monitoring:before {
+    content: "\f201";
+}
+
+.label_lan-hosted:before {
+    content: "\f233";
+}
+
+.label_tech:before {
+    content: "\f109";
+}
+
+.label_misc:before {
+    content: "\f141";
+}
+
+.ais-InfiniteHits button {
+    margin: 2rem 0 2rem 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: var(--colour_text);
+    background: var(--colour_background_accent);
+    border: 0;
+    border: 1px solid var(--colour_background_accent_lighter);
+    border-radius: 2rem;
+    float: right;
+}
+
+footer {
+    padding: 2rem 0 0 0;
+}
+
+footer p {
+    font-size: 1.4rem;
+    color: var(--colour_background_accent_lighter);
+}

@@ -1,0 +1,9 @@
+---
+- title: Brave Search
+  url: https://search.brave.com
+  category: organisation
+  tags: [search]
+- title: Fastmail Inbox
+  url: https://app.fastmail.com
+  category: organisation
+  tags: [email, mail]
