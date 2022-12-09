@@ -17,8 +17,8 @@ search.addWidgets([
     sortBy: ['name:asc'],
     templates: {
       item: `
-      <span class="label_{{ label }}">
-        <a href="{{url}}" style="{{#isRefined}}font-weight: bold{{/isRefined}}">
+      <span class="label_{{ label }}" style="{{#isRefined}}filter: brightness(150%);{{/isRefined}}">
+        <a href="{{url}}">
           {{ label }}
         </a>
       </span>
