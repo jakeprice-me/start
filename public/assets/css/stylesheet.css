@@ -221,7 +221,7 @@ header #start h1 {
 
 header #symbol img {
     width: auto;
-    height: 4rem;
+    height: var(--custom_image_height);
 }
 
 #searchbox form {

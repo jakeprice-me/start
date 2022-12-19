@@ -22,6 +22,7 @@ colour_primary_accent = config_file["colour_primary_accent"]
 colour_results_list_divider = config_file["colour_results_list_divider"]
 colour_text = config_file["colour_text"]
 custom_image_filename = config_file["custom_image_filename"]
+custom_image_height = config_file["custom_image_height"]
 typesense_host = config_file["typesense_host"]
 typesense_port = config_file["typesense_port"]
 
