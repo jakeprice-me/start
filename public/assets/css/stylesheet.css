@@ -198,7 +198,7 @@ body {
     margin: 1rem;
     font-family: "Open Sans", sans-serif;
     color: var(--colour_text);
-    background: var(--colour_background);
+    background: var(--background_css);
 }
 
 header {

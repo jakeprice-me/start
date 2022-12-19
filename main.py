@@ -14,6 +14,7 @@ with open("config.yml", "r", encoding="utf-8") as config:
 
 api_key = config_file["typesense_api_key"]
 collection = config_file["collection_name"]
+background_css = config_file["background_css"]
 colour_background = config_file["colour_background"]
 colour_background_accent = config_file["colour_background_accent"]
 colour_background_accent_light = config_file["colour_background_accent_light"]
@@ -42,7 +43,7 @@ html = f"""
         <style>
            :root {{
               --colour_primary_accent: {colour_primary_accent};
-              --colour_background: {colour_background};
+              --background_css: {background_css};
               --colour_background_accent: {colour_background_accent};
               --colour_background_accent_lighter: {colour_background_accent_lighter};
               --colour_background_accent_light: {colour_background_accent_light};

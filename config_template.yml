@@ -1,4 +1,5 @@
 collection_name: start
+background_css: "#ffffff url('../images/light-pattern.png') repeat top left"
 colour_background: "#000000"
 colour_background_accent: "#111111"
 colour_background_accent_light: "#777777"
