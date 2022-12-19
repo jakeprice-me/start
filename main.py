@@ -48,6 +48,7 @@ html = f"""
               --colour_background_accent_light: {colour_background_accent_light};
               --colour_text: {colour_text};
               --colour_results_list_divider: {colour_results_list_divider};
+              --custom_image_height: {custom_image_height};
             }}
         </style>
     </head>

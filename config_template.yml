@@ -7,7 +7,8 @@ colour_primary_accent: "#0d47a1"
 colour_results_list_divider: "#222222"
 colour_text: "#eeeeee"
 custom_image_filename: favicon.png
+custom_image_height: 3rem
 typesense_api_key: 
-typesense_host: 
-typesense_port: 
+typesense_host: ts.example.com
+typesense_port: 443
 yaml_link_file: links.yml
