@@ -44,6 +44,7 @@ html = f"""
            :root {{
               --colour_primary_accent: {colour_primary_accent};
               --background_css: {background_css};
+              --colour_background: {colour_background};
               --colour_background_accent: {colour_background_accent};
               --colour_background_accent_lighter: {colour_background_accent_lighter};
               --colour_background_accent_light: {colour_background_accent_light};
