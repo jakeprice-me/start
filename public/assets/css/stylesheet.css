@@ -388,6 +388,30 @@ span[class*="label_"]:before {
     content: "\f141";
 }
 
+.label_cicd:before {
+    content: "\f141";
+}
+
+.label_cloud:before {
+    content: "\f0c2";
+}
+
+.label_hr:before {
+    content: "\f500";
+}
+
+.label_knowledge:before {
+    content: "\f02d";
+}
+
+.label_source-control:before {
+    content: "\f126";
+}
+
+.label_sysadmin:before {
+    content: "\f233";
+}
+
 .ais-InfiniteHits button {
     margin: 2rem 0 2rem 0;
     padding: 0.5rem 1rem 0.5rem 1rem;
