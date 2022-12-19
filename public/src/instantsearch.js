@@ -8,7 +8,7 @@ search.addWidgets([
     showSubmit: false,
   }),
   instantsearch.widgets.configure({
-    hitsPerPage:50,
+    hitsPerPage:150,
   }),
   instantsearch.widgets.refinementList({
     container: '#refinement-list',
