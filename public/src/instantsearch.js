@@ -2,7 +2,7 @@ search.addWidgets([
   instantsearch.widgets.searchBox({
     container: '#searchbox',
     placeholder: "Find links...",
-    autofocus: false,
+    autofocus: true,
     searchAsYouType: true,
     showReset: true,
     showSubmit: false,
