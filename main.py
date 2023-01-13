@@ -1,3 +1,4 @@
+import datetime
 import typesense
 import yaml
 
@@ -26,6 +27,7 @@ custom_image_filename = config_file["custom_image_filename"]
 custom_image_height = config_file["custom_image_height"]
 typesense_host = config_file["typesense_host"]
 typesense_port = config_file["typesense_port"]
+build_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 # ++++ HTML Template ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -72,16 +74,20 @@ html = f"""
             <ul id="results">
             </ul>
 
-            <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.43.0/dist/instantsearch.production.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/typesense-instantsearch-adapter@2.4.2-1/dist/typesense-instantsearch-adapter.min.js"></script>
-            <script src="./src/typesense_adaptor.js"></script>
-            <script src="./src/instantsearch.js"></script>
+            <footer>
+                <p>Built at {build_time}</p>
+            </footer>
+
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.43.0/dist/instantsearch.production.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typesense-instantsearch-adapter@2.4.2-1/dist/typesense-instantsearch-adapter.min.js"></script>
+        <script src="./src/typesense_adaptor.js"></script>
+        <script src="./src/instantsearch.js"></script>
     </body>
 
 </html>
-
 """
+
 # ==== Initiate Typesense Client ==============================================
 
 # Typesense client:
