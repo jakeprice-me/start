@@ -249,8 +249,6 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #searchbox .ais-SearchBox-reset {
-    padding: 0 2rem 0 0;
-    width: 4rem;
     color: var(--colour_background_accent_light);
     border: none;
     border-bottom: 1px solid var(--colour_background_accent);
@@ -260,6 +258,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .ais-SearchBox-resetIcon path {
     fill: var(--colour_background_accent_light);
 }
+
+#reset-button {
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    background: var(--colour_background_accent);
+    border-radius: 2rem;
+}
+
 
 #refinement-list ul {
     padding: 2rem;

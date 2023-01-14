@@ -6,6 +6,11 @@ search.addWidgets([
     searchAsYouType: true,
     showReset: true,
     showSubmit: false,
+    templates: {
+      reset({ cssClasses }, { html }) {
+        return html`<span id="reset-button">Reset</span>`;
+      },
+    },
   }),
   instantsearch.widgets.configure({
     hitsPerPage:150,
