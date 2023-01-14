@@ -55,6 +55,19 @@ html = f"""
               --custom_image_height: {custom_image_height};
             }}
         </style>
+        <script>
+            function onkeypressed(evt, input) {{
+                var code = evt.keyCode;
+                if (code == 27) {{
+                    document.querySelector(".ais-SearchBox-form").reset();
+                }}
+            }}
+
+            window.onload=function() {{
+                const searchBoxInput = document.querySelector('input');
+                searchBoxInput.setAttribute("onkeydown", "onkeypressed(event, this);");
+            }}
+        </script>
     </head>
 
     <body>
