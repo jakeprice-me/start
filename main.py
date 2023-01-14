@@ -189,7 +189,7 @@ def load():
                 </ul>
 
                 <footer>
-                    <p>{num_documents} entries - Built at {build_time}</p>
+                    <p>{num_documents} links - Built at {build_time}</p>
                 </footer>
 
             </div>
