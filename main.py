@@ -193,8 +193,8 @@ def load():
                 </footer>
 
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.43.0/dist/instantsearch.production.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/typesense-instantsearch-adapter@2.4.2-1/dist/typesense-instantsearch-adapter.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.46.0/dist/instantsearch.production.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/typesense-instantsearch-adapter@2.5.0-7/dist/typesense-instantsearch-adapter.min.js"></script>
             <script src="./src/typesense_adaptor.js"></script>
             <script src="./src/instantsearch.js"></script>
         </body>
