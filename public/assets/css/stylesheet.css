@@ -249,6 +249,7 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #searchbox .ais-SearchBox-reset {
+    margin: 0 2rem 0 0;
     color: var(--colour_background_accent_light);
     border: none;
     border-bottom: 1px solid var(--colour_background_accent);
