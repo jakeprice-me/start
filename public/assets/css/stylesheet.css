@@ -230,8 +230,7 @@ header #symbol img {
 
 #searchbox form input {
     flex-grow: 1;
-    padding: 2rem;
-    width: 100%;
+    padding: 2rem 0 2rem 2rem;
     color: var(--colour_text);
     border: none;
     border-bottom: 1px solid var(--colour_background_accent);
@@ -249,7 +248,6 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #searchbox .ais-SearchBox-reset {
-    margin: 0 2rem 0 0;
     color: var(--colour_background_accent_light);
     border: none;
     border-bottom: 1px solid var(--colour_background_accent);
@@ -261,12 +259,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 #reset-button {
+    margin: 0 2rem 0 0;
     padding: 0.75rem;
     font-size: 1.2rem;
     background: var(--colour_background_accent);
     border-radius: 2rem;
 }
-
 
 #refinement-list ul {
     padding: 2rem;

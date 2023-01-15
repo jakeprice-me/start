@@ -8,7 +8,7 @@ search.addWidgets([
     showSubmit: false,
     templates: {
       reset({ cssClasses }, { html }) {
-        return html`<span id="reset-button">Reset</span>`;
+        return html`<span id="reset-button"><i class="las la-times"></i> Reset</span>`;
       },
     },
   }),
