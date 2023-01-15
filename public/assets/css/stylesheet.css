@@ -258,6 +258,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     fill: var(--colour_background_accent_light);
 }
 
+#reset-button i {
+    vertical-align: -0.1rem;
+}
+
 #reset-button {
     margin: 0 2rem 0 0;
     padding: 0.75rem;
@@ -433,6 +437,7 @@ footer {
 }
 
 footer p {
+    line-height: 2rem;
     font-size: 1.4rem;
     color: var(--colour_background_accent_lighter);
 }
