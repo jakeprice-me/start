@@ -259,7 +259,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 #reset-button i {
-    vertical-align: -0.1rem;
+    vertical-align: -0.05rem;
 }
 
 #reset-button {
