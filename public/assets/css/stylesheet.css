@@ -264,7 +264,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #reset-button {
     margin: 0 2rem 0 0;
-    padding: 0.75rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 1.2rem;
     background: var(--colour_background_accent);
     border-radius: 2rem;
@@ -422,14 +422,13 @@ span[class*="label_"]:before {
 }
 
 .ais-InfiniteHits button {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 0 0;
     padding: 0.5rem 1rem 0.5rem 1rem;
     color: var(--colour_text);
     background: var(--colour_background_accent);
     border: 0;
     border: 1px solid var(--colour_background_accent_lighter);
     border-radius: 2rem;
-    float: right;
 }
 
 footer {
