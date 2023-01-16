@@ -1,4 +1,5 @@
 import datetime
+import json
 import typesense
 import yaml
 
@@ -113,10 +114,21 @@ def load():
     with open(config["yaml_link_file"], "r", encoding="utf-8") as start_yaml:
         yaml_content = yaml.safe_load(start_yaml)
 
-        client.collections[collection].documents.import_(
+        upsert = client.collections[collection].documents.import_(
             yaml_content, {"action": "upsert"}
         )
-        print(f'Documents upserted into "{collection}" collection.')
+
+        for doc in upsert:
+
+            json_response = json.loads(json.loads(doc))
+
+            success = json_response["success"]
+
+            if success is False:
+                error_message = json_response["error"]
+                print(f"Error upserting document: '{error_message}'")
+
+    print("Documents loaded")
 
     # Get some stats for the collection:
     stats = client.collections[collection].retrieve()
