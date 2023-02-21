@@ -20,6 +20,16 @@ I also know very little about Javascript, so it's all a bit bodged together, but
 
 If you were to host the site on the public internet, somebody could try and bring down your Typesense server by overwhelming it with `curl` requests, but I don't much care at the moment, because I host the application locally on my LAN, and via Tailscale for when I'm out and about - so it's not an issue for me right now. In the long-term I'll come up with a better solution, but for now I don't really mind. 
 
+Here's how to create a search-only key.
+
+```sh
+curl "https://${TYPESENSE_SERVER}/keys" \
+    -X POST \
+    -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY}" \
+    -H 'Content-Type: application/json' \
+    -d '{"description":"Search-only key.","actions": ["documents:search"], "collections": ["start"]}'
+```
+
 ## Usage
 
 The `links_template.yml` should be renamed to `links.yml` and serves as a list of bookmarks to index and add to the webpage. It's easy enough to add links, just follow the format below.
