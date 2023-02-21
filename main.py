@@ -8,7 +8,6 @@ import yaml
 
 # Configuration file:
 with open("config.yml", "r", encoding="utf-8") as config:
-
     # Load config file:
     config = yaml.safe_load(config)
 
@@ -82,7 +81,6 @@ const search = instantsearch({{
 
 
 def load():
-
     """
     Load list of links to a Typesense collection
     """
@@ -93,7 +91,7 @@ def load():
             {
                 "name": f"{collection}",
                 "fields": [
-                    {"name": "id", "type": "string"},
+                    {"name": "number", "type": "int64"},
                     {"name": "title", "type": "string", "sort": True},
                     {"name": "url", "type": "string"},
                     {"name": "category", "type": "string", "facet": True},
@@ -106,9 +104,18 @@ def load():
         print(f'"{collection}" created!')
 
     except typesense.exceptions.ObjectAlreadyExists:
-
         print(f"{collection} collection already exists, so skipping creation.")
         pass
+
+    # Delete existing documents:
+    try:
+        print(
+            client.collections[collection].documents.delete({"filter_by": "number:>0"})
+        )
+        print(f"Documents in {collection} deleted.")
+
+    except:
+        print(f"Documents in {collection} could not be deleted.")
 
     # Upsert documents (links):
     with open(config["yaml_link_file"], "r", encoding="utf-8") as start_yaml:
@@ -119,7 +126,6 @@ def load():
         )
 
         for doc in upsert:
-
             json_response = json.loads(json.loads(doc))
 
             success = json_response["success"]
@@ -138,7 +144,6 @@ def load():
     with open(
         "public/src/typesense_adaptor.js", "w", encoding="utf-8"
     ) as typesense_adaptor:
-
         typesense_adaptor.write(typesense_instant_search)
 
     # ++++ HTML Template ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -215,7 +220,6 @@ def load():
     """
     # Create index.html from template:
     with open("public/index.html", "w", encoding="utf-8") as html_index:
-
         html_index.write(html)
 
 
