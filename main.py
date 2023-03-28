@@ -172,19 +172,30 @@ def load():
                   --custom_image_height: {custom_image_height};
                 }}
             </style>
-            <script>
-                function onkeypressed(evt, input) {{
-                    var code = evt.keyCode;
-                    if (code == 27) {{
-                        document.querySelector(".ais-SearchBox-form").reset();
-                    }}
-                }}
 
-                window.onload=function() {{
-                    const searchBoxInput = document.querySelector('input');
-                    searchBoxInput.setAttribute("onkeydown", "onkeypressed(event, this);");
+            <script>
+            function onkeypressed(evt, input) {{
+                var code = evt.keyCode;
+                if (code == 27) {{
+                    document.querySelector(".ais-SearchBox-form").reset();
                 }}
+            }}
+            
+            window.addEventListener("load", function() {{
+                const searchBoxInput = document.querySelector('input');
+                searchBoxInput.addEventListener("keydown", function(event) {{
+                    onkeypressed(event, searchBoxInput);
+                }});
+            
+                document.addEventListener("keydown", function(event) {{
+                    if (event.key == "/") {{
+                        event.preventDefault();
+                        searchBoxInput.focus();
+                    }}
+                }});
+            }});
             </script>
+
         </head>
 
         <body>
