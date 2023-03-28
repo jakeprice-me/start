@@ -188,7 +188,7 @@ def load():
                 }});
             
                 document.addEventListener("keydown", function(event) {{
-                    if (event.key == "/") {{
+                    if (event.ctrlKey && event.key === 'k') {{
                         event.preventDefault();
                         searchBoxInput.focus();
                     }}
