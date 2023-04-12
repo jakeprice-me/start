@@ -126,11 +126,11 @@ def load():
         )
 
         for doc in upsert:
-            json_response = json.loads(json.loads(doc))
+            json_response = doc
 
             success = json_response["success"]
 
-            if success is False:
+            if not success:
                 error_message = json_response["error"]
                 print(f"Error upserting document: '{error_message}'")
 
