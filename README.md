@@ -34,13 +34,18 @@ curl "https://${TYPESENSE_SERVER}/keys" \
 
 The `links_template.yml` should be renamed to `links.yml` and serves as a list of bookmarks to index and add to the webpage. It's easy enough to add links, just follow the format below.
 
-```yml
-- title: Brave Search
+```yaml
+---
+- number: 1
+  title: Brave Search
   url: https://search.brave.com
+  icon: https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon-32x32.86083f5b.png
   category: organisation
   tags: [search]
-- title: Fastmail Inbox
+- number: 2
+  title: Fastmail Inbox
   url: https://app.fastmail.com
+  icon: https://img.icons8.com/?id=OumT4lIcOllS&format=png
   category: organisation
   tags: [email, mail]
 ```
