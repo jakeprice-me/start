@@ -332,6 +332,14 @@ mark {
     flex-grow: 1;
 }
 
+li img {
+    margin: 0 1rem 0 0;
+    max-width: 2rem;
+    height: auto;
+    object-fit: contain;
+    vertical-align: -0.4rem;
+}
+
 span[class*="label_"] {
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-family: "Open Sans", sans-serif;

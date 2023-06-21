@@ -34,7 +34,7 @@ search.addWidgets([
     templates: {
       item: `
             <div id="title">
-                <a href="{{ url }}" target="_blank">{{#helpers.snippet}}{ "attribute": "title" }{{/helpers.snippet}}</a>
+                <img src="{{ icon }}"> <a href="{{ url }}" target="_blank">{{#helpers.snippet}}{ "attribute": "title" }{{/helpers.snippet}}</a>
             </div>
             <div id="type">
                 <span class="label_{{ category }}">

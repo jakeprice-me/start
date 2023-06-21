@@ -94,6 +94,7 @@ def load():
                     {"name": "number", "type": "int64"},
                     {"name": "title", "type": "string", "sort": True},
                     {"name": "url", "type": "string"},
+                    {"name": "icon", "type": "string"},
                     {"name": "category", "type": "string", "facet": True},
                     {"name": "tags", "type": "string[]"},
                 ],
