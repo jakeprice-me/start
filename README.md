@@ -39,13 +39,13 @@ The `links_template.yml` should be renamed to `links.yml` and serves as a list o
 - number: 1
   title: Brave Search
   url: https://search.brave.com
-  icon: https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon-32x32.86083f5b.png
+  icon: https://t1.gstatic.com/faviconV2?url={url}&client=SOCIAL&type=FAVICON
   category: organisation
   tags: [search]
 - number: 2
   title: Fastmail Inbox
   url: https://app.fastmail.com
-  icon: https://img.icons8.com/?id=OumT4lIcOllS&format=png
+  icon: https://t1.gstatic.com/faviconV2?url={url}&client=SOCIAL&type=FAVICON
   category: organisation
   tags: [email, mail]
 ```
