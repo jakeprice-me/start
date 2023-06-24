@@ -325,7 +325,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 mark {
     color: var(--colour_text);
-    background: var(--colour_primary_accent);
+    background: var(--colour_background_accent);
 }
 
 #title {
@@ -344,13 +344,13 @@ span[class*="label_"] {
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-family: "Open Sans", sans-serif;
     font-size: 1.2rem;
-    color: var(--colour_text);
+    color: var(--colour_label_text);
     border-radius: 2rem;
     background: var(--colour_primary_accent);
 }
 
 span[class*="label_"] a {
-    color: var(--colour_text);
+    color: var(--colour_label_text);
     }
 
 span[class*="label_"]:before {
@@ -358,7 +358,7 @@ span[class*="label_"]:before {
     font-family: "Line Awesome Free";
     font-size: 1.4rem;
     font-weight: 900;
-    color: var(--colour_text);
+    color: var(--colour_label_text);
 }
 
 .label_media:before {
@@ -446,5 +446,6 @@ footer {
 footer p {
     line-height: 2rem;
     font-size: 1.4rem;
-    color: var(--colour_background_accent_lighter);
+    color: var(--colour_background_accent_light);
 }
+

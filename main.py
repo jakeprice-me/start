@@ -20,6 +20,7 @@ colour_background = config["colour_background"]
 colour_background_accent = config["colour_background_accent"]
 colour_background_accent_light = config["colour_background_accent_light"]
 colour_background_accent_lighter = config["colour_background_accent_lighter"]
+colour_label_text = config["colour_label_text"]
 colour_primary_accent = config["colour_primary_accent"]
 colour_results_list_divider = config["colour_results_list_divider"]
 colour_text = config["colour_text"]
@@ -166,10 +167,11 @@ def load():
                   --background_css: {background_css};
                   --colour_background: {colour_background};
                   --colour_background_accent: {colour_background_accent};
-                  --colour_background_accent_lighter: {colour_background_accent_lighter};
                   --colour_background_accent_light: {colour_background_accent_light};
-                  --colour_text: {colour_text};
+                  --colour_background_accent_lighter: {colour_background_accent_lighter};
+                  --colour_label_text: {colour_label_text};
                   --colour_results_list_divider: {colour_results_list_divider};
+                  --colour_text: {colour_text};
                   --custom_image_height: {custom_image_height};
                 }}
             </style>
