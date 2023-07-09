@@ -329,7 +329,7 @@ mark {
 }
 
 #title {
-    flex-grow: 1;
+    flex: 1;
 }
 
 li img {
